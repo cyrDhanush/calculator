@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<script type="text/javascript" src="assets/scripts/scriptone.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="blur"></div>
+	<div class="boxandbut">
+		<div class="textbox">
+			<input type="textbox" name="output" value="Made By Dhanush :)" id="txtbox" >
+		</div>
+		<div class="buttons">
+			<div class="leftcolumn">
+				<div class="firstrow">
+					<button onclick="backspace()"><-</button>
+					<button onclick="numpress('/')">/</button>
+					<button onclick="numpress('*')">*</button>
+				</div>
+				<div class="secondrow">
+					<button onclick="numpress('7')">7</button>
+					<button onclick="numpress('8')">8</button>
+					<button onclick="numpress('9')">9</button>
+				</div>
+				<div class="thirdrow">
+					<button onclick="numpress('4')">4</button>
+					<button onclick="numpress('5')">5</button>
+					<button onclick="numpress('6')">6</button>
+				</div>
+				<div class="fourthrow">
+					<button onclick="numpress('1')">1</button>
+					<button onclick="numpress('2')">2</button>
+					<button onclick="numpress('3')">3</button>
+				</div>
+				<div class="lastrow">
+					<button onclick="numpress('0')" style="flex-grow: 1">0</button>
+					<button onclick="numpress('.')">.</button>
+				</div>
+			</div>
+			<div class="rightcolumn">
+				<button onclick="numpress('-')">-</button>
+				<button onclick="numpress('+')" style="flex-grow: 1">+</button>
+				<button style="flex-grow: 1" onclick="find()">=</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="credits">
+	<p>Made By <span class="name">Dhanush</span></p>
+</div>
+</body>
+
+</html>
